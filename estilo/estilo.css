@@ -1,0 +1,90 @@
+/* ***************************************/
+/*             LaVuelta2026              */
+/*          Estilos generales            */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos: Iker Cañete Giner*/
+/*  Correo electrónico (uniovi): UO307389*/
+/*  Grupo de laboratorio:   L-10         */
+/* ***************************************/
+
+/*Especificidad: c*/
+body {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+/*Gama cromática
+Color principal (#75FF70)
+    Contraste de 7.21:1 con color secundario
+    Contraste de 16.29:1 con negro
+
+Color secundario (#940000)
+    Contraste de 7.21:1 con color principal
+    Contraste de 9.29:1 con blanco
+*/
+
+/*Especificidad: 010*/
+:root{
+    --color-principal: #75FF70;
+    --color-secundario: #940000;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+}
+
+/*Especificidad: 001*/
+header, footer {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+/*Especificidad: 002,002*/
+header a, footer a {
+    color: var(--color-secundario); /*ADVERTENCIA: color principal de fondo heredado de header y footer*/
+    text-decoration-line: none;
+}
+
+/*Especificidad: 001*/
+h2, h3, h4, h5, h6 {
+    color:var(--color-negro);
+}
+
+/*Especificidad: 011*/
+a[aria-current]{
+    text-decoration-line: underline;
+}
+
+/*Especificidad: 003*/
+header + nav > ol{
+    font-size: 0.8em;
+    list-style: none;
+}
+
+/*Especificidad: 003*/
+nav > ol > li{
+    display: inline;
+}
+
+/*Especificidad: 013*/
+nav > ol > li:last-child{
+    font-weight: bold;
+}
+
+/*Especificidad: 014*/
+section:has(ul) > ul>li:first-child{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*Especificidad: 014*/
+section:has(ul) > ul>li:nth-child(3){
+    font-size: 1.2em;
+}
+
+/*Especificidad: 014*/
+section:has(ul) > ul>li:nth-child(4){
+    font-weight: bold;
+}
+

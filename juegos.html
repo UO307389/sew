@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Juegos</title>
+
+    <meta name="author" content="Iker Cañete Giner" />
+    <meta name="description" content="Documento juegos del proyecto LaVuelta2026" />
+   
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/favicon.ico" />
+</head>
+
+<body>
+   <!-- contenido de juegos.html  -->
+    <header>
+        <h1><a href="index.html">LaVuelta2026</a></h1>
+        <nav>
+            <a href="index.html" title="Menú principal">Inicio</a>
+            <a href="ciclista.html" title="Página del ciclista seleccionado">Ciclista</a>
+            <a href="equipo.html" title="Página de equipo del ciclista">Equipo</a>
+            <a href="etapa.html" title="Página de Etapa 13">Etapa</a>
+            <a href="meteorologia.html" title="Página de la meteorologia">Meteorología</a>
+            <a href="clasificaciones.html" title="Página de las clasificaciones">Clasificaciones</a>
+            <a href="juegos.html" title="Página de juegos" aria-current="page">Juegos</a>
+            <a href="ayuda.html" title="Página de ayuda">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav aria-label=”migas”>
+        <ol>
+            <li><a href="index.html"></a>Inicio</li>
+            <li>|</li>
+            <li>Juegos</li>
+        </ol>
+    </nav>
+
+    <main>
+    <h2>Juegos</h2>
+    <h3>¿Conoces la etapa?</h3>
+    <p>Un divertido cuestionario sobre una etapa de LaVuelta2026 para todo público</p>
+    <form>
+        <fieldset>
+            <legend>Almuñécar-Loja</legend>
+            <p>
+                <label for="numero_etapa">¿A qué etapa pertenece el susodicho recorrido?</label>
+                <input id="numero_etapa" name="num_etapa" type="number" min="1" max="21"/>
+            </p>
+            <p>
+                <label for="fecha_etapa">¿En qué fecha se celebró dicha etapa?</label>
+                <input id="fecha_etapa" name="fecha" type="date" min="2026-01-01" max="2026-12-31"/>
+            </p>
+            <p>
+                <label for="lugar_etapa">¿En qué lugar se estableció la salida?</label>
+                <select id="lugar_etapa">
+                    <option>Seleccione una opción</option>
+                    <option value="1">Palma del río</option>
+                    <option value="2">Jaén</option>
+                    <option value="3">Almuñécar</option>
+                    <option value="4">Cartagena</option>
+
+                </select>
+            </p>
+            <p>
+                <label for="meta_etapa">¿En qué lugar se estableció la meta?</label>
+                <select id="meta_etapa">
+                    <option>Seleccione una opción</option>
+                    <option value="1">Lorca</option>
+                    <option value="2">Loja</option>
+                    <option value="3">Elche de la Sierra</option>
+                    <option value="4">Calar Alto</option>
+                </select>
+            </p>
+            <p>
+                <label for="radio1">Especifique el tipo de etapa:</label>
+                <input type="radio" id="radio1" name="tipo-etapa"/>
+                <label for="radio1">Llana</label>
+                <input type="radio" id="radio2" name="tipo-etapa"/>
+                <label for="radio2">Media montaña</label>
+                <input type="radio" id="radio3" name="tipo-etapa"/>
+                <label for="radio3">Montaña</label>
+                <input type="radio" id="radio4" name="tipo-etapa"/>
+                <label for="radio4">Contrarreloj individual</label>
+                <input type="radio" id="radio5" name="tipo-etapa"/>
+                <label for="radio5">Contrarreloj por equipos</label>
+                
+            </p>
+            <p>
+                <label for="hito1">Seleccione las opciones correctas:</label>
+                <input id="hito1" type="checkbox" name="hito"/>
+                <label for="hito1">Puerto de montaña</label>
+                <input id="hito2" type="checkbox" name="hito"/>
+                <label for="hito2">Puerto categoría especial</label>
+                <input id="hito3" type="checkbox" name="hito"/>
+                <label for="hito3">Sprint intermedio</label>
+                <input id="hito4" type="checkbox" name="hito"/>
+                <label for="hito4">Sprint bonificado</label>
+                <input id="hito5" type="checkbox" name="hito"/>
+                <label for="hito5">Sin hitos</label>
+            </p>
+            <p>
+                <label for="rango">Dificultad de la etapa</label>
+                <input id="rango" name="dificultad" type="range" min="1" max="10" step="1"/>
+            </p>
+            <p>
+                <label for="numb">Longitud de la etapa en kilómetros</label>
+                <input id="numb" name="longitud" type="number" min="5" max="250"/>
+            </p>
+            <p>
+                <label for="des">Desnivel de la etapa en metros</label>
+                <input id="des" name="desnivel" type="number" min="1000" max="5000"/>
+            </p>
+            <p>
+                <label for="txt">Describa brevemente la etapa</label>
+                <textarea id="txt" name="textarea" maxlength="400" placeholder="Escriba aquí"></textarea>
+            </p>
+            <p>
+                <label for="txt_n">Introduzca su nombre</label>
+                <input id="txt_n" type="text" name="txt_name" placeholder="Escriba su nombre" maxlength="50"/>
+            </p>
+
+            <button type="submit" name="button">Enviar</button>
+        </fieldset>
+    </form>
+    </main>
+    <footer>
+        <p>Iker Cañete Giner</p>
+        <address><p><a href="mailto:UO307389@uniovi.es">UO307389@uniovi.es</a></p></address>
+    </footer>
+</body>
+</html>

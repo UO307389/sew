@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Ciclista</title>
+
+    <meta name="author" content="Iker Cañete Giner" />
+    <meta name="description" content="Documento cilcista.html del proyecto LaVuelta2026" />
+    
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/favicon.ico" />
+</head>
+
+<body>
+   <!-- contenido de ciclista.html  -->
+    <header>
+        <h1><a href="index.html">LaVuelta2026</a></h1>
+        <nav>
+            <a href="index.html" title="Menú principal">Inicio</a>
+            <a href="ciclista.html" title="Página del ciclista seleccionado" aria-current="page">Ciclista</a>
+            <a href="equipo.html" title="Página de equipo del ciclista">Equipo</a>
+            <a href="etapa.html" title="Página de Etapa 13">Etapa</a>
+            <a href="meteorologia.html" title="Página de la meteorologia">Meteorología</a>
+            <a href="clasificaciones.html" title="Página de las clasificaciones">Clasificaciones</a>
+            <a href="juegos.html" title="Página de juegos">Juegos</a>
+            <a href="ayuda.html" title="Página de ayuda">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav aria-label=”migas”>
+        <ol>
+            <li><a href="index.html"></a>Inicio</li>
+            <li>|</li>
+            <li>Ciclista</li>
+        </ol>
+    </nav>
+
+    <main>
+    <h2>Andreas Leknessund</h2>
+
+    <section>
+        <h3>Datos personales</h3>
+
+        <ul>
+            <li>Andreas Leknessund</li>
+            <li>21/05/1999</li>
+            <li>Noruega</li>
+            <li>UNO-X MOBILITY</li>
+            <li>N°136</li>
+        </ul>
+
+        <picture>
+            <source srcset="multimedia/ciclista_2.png" media="(max-width: 1024px)" width="300" height="316">
+            <source srcset="multimedia/ciclista_3.png" media="(max-width: 768px)" width="221" height="225">
+            <img src="multimedia/ciclista.png" width="300" height="455" alt="Fotografía de Andreas Leknessund"/>
+        </picture>
+    </section>
+
+    <section>
+        <h3>Multimedia</h3>
+        <p>Equipo <a href="https://www.lavuelta.es/es/equipo/UXM/uno-x-mobility">UNO-X MOBILITY</a> en la Vuelta Ciclista a España 2026.</p>
+        <video controls poster="multimedia/poster.png">
+            <source src="multimedia/presentacion.mp4" type="video/mp4">
+            <source src="multimedia/presentacion.webm" type="video/webm">
+
+        </video>
+        <audio controls>
+            <source src="multimedia/historia.mp3" type="audio/mpeg">
+            <source src="multimedia/historia.wav" type="audio/wav">
+        </audio>
+    </section>
+
+    <section>
+        <h3>Datos equipos</h3>
+
+        <ol>
+            <li>Uno-X Mobility</li>
+            <li>Team DSM</li>
+            <li>Uno-X Norwegian Development Team</li>
+            <li>Ringerike SK</li>
+        </ol>
+    </section>
+
+    <section>
+        <h3>Temporada 2025</h3>
+        <table>
+            <tr>
+                <th id="dtnm" scope="col">Nombre del Dato</th>
+                <th id="res" scope="col">Resultado</th>
+            </tr>
+            <tr>
+                <td headers="dtnm">Carreras</td>
+                <td headers="res">16</td>
+            </tr>
+            <tr>
+                <td headers="dtnm">Podios</td>
+                <td headers="res">2</td>
+            </tr>
+            <tr>
+                <td headers="dtnm">Victorias</td>
+                <td headers="res">1</td>
+            </tr>
+            <tr>
+                <td headers="dtnm">Carreras en Noruega</td>
+                <td headers="res">5</td>
+            </tr>
+            <tr>
+                <td headers="dtnm">Carreras en España</td>
+                <td headers="res">1</td>
+            </tr>
+            <tr>
+                <td headers="dtnm">Mejor clasificación en una etapa</td>
+                <td headers="res">5</td>
+            </tr>
+        </table>
+    </section>
+    </main>
+    <footer>
+        <p>Iker Cañete Giner</p>
+        <address><p><a href="mailto:UO307389@uniovi.es">UO307389@uniovi.es</a></p></address>
+    </footer>
+</body>
+</html>
